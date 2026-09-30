@@ -1,0 +1,5 @@
+outs:
+- md5: d76d509e92f42ebb042083e637a63b5a
+  size: 66968032
+  hash: md5
+  path: nyc-taxi-trip-duration.zip

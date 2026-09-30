@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+      - src/prepare_data.py
+      - data/raw/nyc-taxi-trip-duration.zip
+    outs:
+      - data/processed/nyc_taxi_clean.csv
