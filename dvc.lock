@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+    - path: data/raw/nyc-taxi-trip-duration.zip
+      hash: md5
+      md5: d76d509e92f42ebb042083e637a63b5a
+      size: 66968032
+    - path: src/prepare_data.py
+      hash: md5
+      md5: b7050a6f5da6b7984ccfe23c5398dfb3
+      size: 1426
+    outs:
+    - path: data/processed/nyc_taxi_clean.csv
+      hash: md5
+      md5: d00e750c66fdc242b91aeb3bbfd34ab9
+      size: 196990281
