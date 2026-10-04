@@ -8,6 +8,7 @@
 git lfs install
 git clone https://github.com/Merhaba228/applied-ai-lab3.git
 cd applied-ai-lab3
+git lfs pull
 pip install -r requirements.txt
 python -m dvc repro
 ```
